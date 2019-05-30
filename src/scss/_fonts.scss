@@ -1,0 +1,24 @@
+@mixin font-face($font-family, $file-path) {
+    @font-face {
+        font-family: $font-family;
+        font-weight: normal;
+        font-style: normal;
+        src: url('#{$file-path}.eot');
+        src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+        url('#{$file-path}.woff') format('woff'),
+        url('#{$file-path}.ttf') format('truetype');
+    }
+}
+
+@include font-face("RobotoBold", "../fonts/RobotoBold/RobotoBold");
+@include font-face("RobotoLight", "../fonts/RobotoLight/RobotoLight");
+@include font-face("RobotoRegular", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("RobotoMedium", "../fonts/RobotoMedium/RobotoMedium");
+@include font-face("OpenSansRegular", "../fonts/OpenSansRegular/OpenSansRegular");
+@include font-face("ProximaNovaRegular", "../fonts/ProximaNovaRegular/ProximaNovaRegular");
+@include font-face("proximanovasemibold", "../fonts/proximanovasemibold/proximanovasemibold");
+@include font-face("ProximaNovaTThin", "../fonts/ProximaNovaTThin/ProximaNovaTThin");
+@include font-face("SFUITextBold", "../fonts/SFUITextBold/SFUITextBold");
+@include font-face("SFUITextLight", "../fonts/SFUITextLight/SFUITextLight");
+@include font-face("SFUITextMedium", "../fonts/SFUITextMedium/SFUITextMedium");
+@include font-face("SFUITextRegular", "../fonts/SFUITextRegular/SFUITextRegular");
