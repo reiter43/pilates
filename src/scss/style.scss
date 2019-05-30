@@ -1,7 +1,33 @@
-
 @import 'fonts.scss';
 @import 'normalize.scss';
 @import 'mixsins.scss';
+
+/*=============================================*/
+
+
+$ff1: "RobotoBold";
+$ff2: "RobotoLight";
+$ff3: "RobotoRegular";
+$ff4: "RobotoMedium";
+$ff5: "OpenSansRegular";
+$ff6: "ProximaNovaRegular";
+$ff7: "proximanovasemibold";
+$ff8: "ProximaNovaTThin";
+$ff9: "SFUITextBold";
+$ff10: "SFUITextLight";
+$ff11: "SFUITextMedium";
+$ff12: "SFUITextRegular";
+
+$fc1: #ffffff;
+$fc2: #000000;
+$fc3: #91aa59;
+$fc4: #111111;
+$fc5: #242424;
+$fc6: #fefefe;
+$fc7: #2a4f37;
+$fc8: #c8d4ac;
+$fc9: #c8d4ac;
+$fc10: #010101;
 
 
 
@@ -26,11 +52,11 @@ html {
 body {
     margin: 0;
     padding: rem(25px) 0;
-    font-size: rem(46px);
+    font-size: rem(26px);
     font-weight: 400;
     line-height: 1.375;
     font-family: "RobotoBold";
-    background: blue
+    background: $fc3;
 }
 
 p,
