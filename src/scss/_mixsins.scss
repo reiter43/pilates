@@ -62,7 +62,7 @@
 }
 
 //Кнопка-гамбургер для меню
-@mixin gamburger ($w, $h, $c, $colorbg) {
+@mixin gamburger ($w, $h, $gat, $c, $colorbg) {
   z-index: 10000;
   padding: 0.3rem;
   border: none;
@@ -82,7 +82,7 @@
     display: block;
     width: $w;
     height: $h;
-    margin-bottom: 7px;
+    margin-bottom: $gat;
     border-radius: 1px;
     background: $c;
 

@@ -17,6 +17,7 @@ $ff9: "SFUITextBold";
 $ff10: "SFUITextLight";
 $ff11: "SFUITextMedium";
 $ff12: "SFUITextRegular";
+$ff13: "ProximaNovaExtrabld";
 
 $fc1: #ffffff;
 $fc2: #000000;
@@ -39,29 +40,31 @@ $fc10: #010101;
     @include clearfix;
 }
 
-.container {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 rem(32px);
-}
-
 html {
     font-size: 100%;
 }
 
 body {
     margin: 0;
-    padding: rem(25px) 0;
-    font-size: rem(26px);
+    padding: 0;
+    font-size: rem(16px);
+    font-family: $ff13;
     font-weight: 400;
     line-height: 1.375;
-    font-family: "RobotoBold";
-    background: $fc3;
+    color: $fc2;
+    background: $fc1;
 }
 
 p,
 ul {
     margin: 0;
+}
+
+.container {
+    max-width: rem(1166px);
+    margin: 0 auto;
+    padding: 0;
+
 }
 
 /*============================================= */
@@ -71,8 +74,131 @@ ul {
         ШАПКА
 ============================================= */
 
+.header {
+    min-height: rem(786px);
+    background-repeat: no-repeat;
+    background-position: top -0.3rem right -1.75rem;
+    padding-top: rem(34px);
+}
 
+.header__img {
+    min-height: 776px;
+    background-repeat: no-repeat;
+    background-position: top right -100px;
+}
 
+.header__topLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: rem(138px);
+}
+
+/* Кнопка меню-гамбургер
+------------------------------------------------*/
+.burger {
+    @include gamburger (23px, 2px, 5px, $fc1, $fc3);
+
+    &__line {
+        &:first-child {
+            width: 15px;
+        }
+    }
+}
+
+/*----------------------------------------------*/
+
+.phone {
+    opacity: 0.87;
+    color: $fc2;
+    font-family: $ff12;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.31;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__title {
+    color: $fc1;
+    font-family: $ff3;
+    font-size: 3.625rem;
+    font-weight: 300;
+    line-height: 1.24;
+    text-transform: uppercase;
+}
+
+.header__desc {
+    margin-top: rem(36px);
+    margin-bottom: rem(50px);
+    color: $fc1;
+    font-family: $ff12;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+/* Кнопка сайта основная 
+/*----------------------------------------------*/
+.btn {
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 3.375;
+    width: 15.5rem;
+    height: 3.375rem;
+    border-radius: 1.688rem;
+    border: 0.125rem solid $fc1;
+    text-decoration: none;
+
+    &__text {
+        display: inline;
+        color: $fc1;
+        font-family: $ff12;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    &__arrow {
+        position: relative;        
+        width: 72px;
+        height: 3.375rem;        
+    }
+}
+
+.btn__arrowBase,
+.btn__arrowBase::after,
+.btn__arrowBase::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1px;
+    content: '';
+    width: 72px;
+    height: 0.125rem;
+    background-color: $fc1;
+}
+
+.btn__arrowBase::after {
+    width: 7px;
+    transform: translateY(6px);
+    transform: rotate(40deg);
+    transform-origin: right top;
+}
+
+.btn__arrowBase::before {
+    width: 7px;
+    transform: translateY(-6px);
+    transform: rotate(-40deg);
+    transform-origin: right bottom;
+}
+
+.wrapper__arrow {
+    position: absolute;
+    right: -36px;
+    top: 0%;
+}
 
 /*============================================= */
 
