@@ -26,7 +26,7 @@ const imagemin = require('gulp-imagemin');
 //Таск для обработки стилей
 gulp.task('styles', () => {
 	return gulp.src([
-		'./src/libs/**/*.scss',
+		// './src/libs/**/*.scss',
 		'./src/scss/style.scss'
 	])
 		.pipe(sourcemaps.init())				
@@ -36,9 +36,9 @@ gulp.task('styles', () => {
 			browsers: ['last 2 versions'],
 			cascade: false
 		}))
-		.pipe(cleanCSS({
-			level: 2
-		}))
+		// .pipe(cleanCSS({
+		// 	level: 2
+		// }))
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./build/css'))
 		.pipe(browserSync.stream());
