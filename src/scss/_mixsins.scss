@@ -93,8 +93,6 @@
 }
 
 
-
-
 //---------------------------------------------
 
 
@@ -105,4 +103,9 @@
 //Перевод пикселей в ремы
 @function rem($pxsize) {
   @return ($pxsize/16px)+rem;
+}
+
+// Плавное изменение размера в определенном диапазоне экрана
+@function smoot($max-size, $min-size, $max-viewport, $min-viewport){
+  @return calc(#{$min-size}px + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-viewport}px) / (#{$max-viewport} - #{$min-viewport})));
 }

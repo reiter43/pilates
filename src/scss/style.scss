@@ -64,7 +64,6 @@ ul {
     max-width: rem(1200px);
     margin: 0 auto;
     padding: 0 rem(17px);
-
 }
 
 /*============================================= */
@@ -75,7 +74,8 @@ ul {
 ============================================= */
 
 .header {
-    height: rem(786px);    
+    height: rem(786px); 
+    background-image:url(../img/images/dgHeader.png);   
     background-repeat: no-repeat;
     background-position: top -5px left -5px;
     background-size: 102.2% auto;    
@@ -84,6 +84,7 @@ ul {
 
 .row-header{    
     height: rem(776px);
+    background-image:url(../img/images/foto.png);
     background-repeat: no-repeat;
     background-position: top 5px right -106px;
     background-size: 81% auto;
@@ -94,7 +95,14 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7.6rem;
-    padding-right: 0.3rem;
+    padding-right: 0.3rem;    
+}
+
+.logo{
+    background-image:url(../img/images/Логотип.png);
+    background-repeat: no-repeat;    
+    height: 53px;
+    width: 63px; 
 }
 
 /* Кнопка меню-гамбургер
@@ -146,11 +154,12 @@ ul {
 /*----------------------------------------------*/
 .btn {
     position: relative;
-    display: block;
+    display: inline-block;
     text-align: center;
     line-height: 3.375;
-    width: 15.5rem;
-    height: 3.375rem;
+    // width: 15.5rem;
+    // height: 3.375rem;
+    padding: 0 46px;
     border-radius: 1.688rem;
     border: 0.125rem solid $fc1;
     text-decoration: none;
@@ -241,6 +250,6 @@ ul {
         АДАПТИВ
 ============================================= */
 
-@import '_media.scss';
+@import 'media.scss';
 
 /*============================================= */

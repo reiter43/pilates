@@ -508,6 +508,7 @@ ul {
 ============================================= */
 .header {
   height: 49.125rem;
+  background-image: url(../img/images/dgHeader.png);
   background-repeat: no-repeat;
   background-position: top -5px left -5px;
   background-size: 102.2% auto;
@@ -515,6 +516,7 @@ ul {
 
 .row-header {
   height: 48.5rem;
+  background-image: url(../img/images/foto.png);
   background-repeat: no-repeat;
   background-position: top 5px right -106px;
   background-size: 81% auto; }
@@ -531,6 +533,12 @@ ul {
   align-items: center;
   margin-bottom: 7.6rem;
   padding-right: 0.3rem; }
+
+.logo {
+  background-image: url(../img/images/Логотип.png);
+  background-repeat: no-repeat;
+  height: 53px;
+  width: 63px; }
 
 /* Кнопка меню-гамбургер
 ------------------------------------------------*/
@@ -593,11 +601,10 @@ ul {
 /*----------------------------------------------*/
 .btn {
   position: relative;
-  display: block;
+  display: inline-block;
   text-align: center;
   line-height: 3.375;
-  width: 15.5rem;
-  height: 3.375rem;
+  padding: 0 46px;
   border-radius: 1.688rem;
   border: 0.125rem solid #ffffff;
   text-decoration: none; }
@@ -668,6 +675,134 @@ ul {
 /*=============================================
         АДАПТИВ
 ============================================= */
+@media (min-width: 765px) and (max-width: 1366px) {
+  .header__title {
+    font-size: calc(48px + (57 - 48) * ((100vw - 765px) / (1366 - 765))); }
+  .header__desc {
+    font-size: calc(14px + (18 - 14) * ((100vw - 765px) / (1366 - 765))); }
+  .btn__text {
+    font-size: calc(12px + (14 - 12) * ((100vw - 765px) / (1366 - 765))); } }
+
+@media (min-width: 765px) and (max-width: 900px) {
+  .header__desc {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem; }
+  .btn {
+    padding: 0 15px;
+    line-height: 1.5rem; }
+    .btn__arrow {
+      display: none; } }
+
+@media screen and (max-width: 764px) {
+  .container {
+    padding: 0 3.75rem; }
+  .header {
+    background-image: url(../img/images/bgheaderplanshet.png);
+    background-position: top -7px left -4px;
+    background-size: 103.2% auto;
+    padding-top: 1.875rem; }
+  .row-header {
+    background-image: url(../img/images/fotoplanshet.png);
+    background-position: top 39px right -120px;
+    background-size: 98.2% auto; }
+  .header__title {
+    font-size: 3rem; }
+  .header__desc {
+    font-size: 14px; }
+  .header__topLine {
+    margin-bottom: 5.6rem; }
+  .btn__arrow {
+    display: none; } }
+
+@media (min-width: 321px) and (max-width: 764px) {
+  .header__title {
+    font-size: calc(18px + (48 - 18) * ((100vw - 321px) / (764 - 321))); }
+  .header__desc {
+    font-size: calc(10px + (14 - 10) * ((100vw - 321px) / (764 - 321))); }
+  .btn__text {
+    font-size: calc(8px + (14 - 8) * ((100vw - 321px) / (764 - 321))); } }
+
+@media screen and (max-width: 654px) {
+  .container {
+    padding: 0 1.875rem; }
+  .btn {
+    padding: 0 10px;
+    line-height: 2rem; } }
+
+@media screen and (max-width: 587px) {
+  .container {
+    padding: 0 0.9375rem; }
+  .header__topLine {
+    margin-bottom: 1.5rem; }
+  .phone {
+    visibility: hidden; }
+  .burger {
+    margin-left: 3rem; }
+  .header__title {
+    margin-bottom: 1.3rem; }
+  .header__desc {
+    display: none;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem; } }
+
+@media screen and (max-width: 320px) {
+  .header {
+    background-image: url(../img/images/bgheadermob.png);
+    background-position: top -55px left -168px;
+    background-size: 167% auto;
+    padding-top: 0.9375rem; }
+  .row-header {
+    background-image: url(../img/images/fotomob.png);
+    background-position: top 120px right -56px;
+    background-size: 98.2% auto; }
+  .header__topLine {
+    padding-right: 0;
+    margin-right: -0.3rem;
+    margin-bottom: 4.6875rem; }
+  .logo {
+    background-image: url(../img/images/logomob.png);
+    height: 31px;
+    width: 38px; }
+  .burger {
+    z-index: 10000;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    background: none;
+    cursor: pointer; }
+    .burger:hover {
+      background: #91aa59; }
+    .burger__line {
+      display: block;
+      width: 16px;
+      height: 2px;
+      margin-bottom: 3px;
+      border-radius: 1px;
+      background: #ffffff; }
+      .burger__line:last-child {
+        margin-bottom: 0; }
+    .burger__line:first-child {
+      width: 10px; }
+  .header__title {
+    font-size: 1.875rem;
+    font-weight: 100;
+    margin-bottom: 1.5625rem;
+    letter-spacing: 0.094rem; }
+  .header__desc {
+    display: none; }
+  .phone {
+    display: none; }
+  .btn__text {
+    font-size: 0.688rem;
+    font-weight: 500; }
+  .btn {
+    padding: 0 16px;
+    line-height: 2rem; } }
+
 /*============================================= */
 
 /*# sourceMappingURL=style.css.map */
