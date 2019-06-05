@@ -27,6 +27,7 @@ const imagemin = require('gulp-imagemin');
 gulp.task('styles', () => {
 	return gulp.src([
 		// './src/libs/**/*.scss',
+		'./src/libs/fontawesome/font-awesome.css',
 		'./src/scss/style.scss'
 	])
 		.pipe(sourcemaps.init())				

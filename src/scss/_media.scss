@@ -141,8 +141,8 @@
 
     .logo {
         background-image: url(../img/images/logomob.png);
-        height: 31px;
-        width: 38px;
+        height: rem(31px);
+        width: rem(38px);
     }
 
     .burger {
@@ -150,7 +150,7 @@
 
         &__line {
             &:first-child {
-                width: 10px;
+                width: rem(10px);
             }
         }
     }
@@ -176,7 +176,7 @@
     }
 
     .btn {
-        padding: 0 16px;
+        padding: 0 rem(16px);
         line-height: 2rem;
     }
 }

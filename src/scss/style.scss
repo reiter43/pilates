@@ -46,13 +46,13 @@ html {
 
 body {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     font-size: rem(16px);
     font-family: $ff13;
     font-weight: 400;
     line-height: 1.375;
     color: $fc2;
-    background: $fc1;    
+    background: $fc1;
 }
 
 p,
@@ -74,35 +74,35 @@ ul {
 ============================================= */
 
 .header {
-    height: rem(786px); 
-    background-image:url(../img/images/dgHeader.png);   
+    height: rem(786px);
+    background-image: url(../img/images/dgHeader.png);
     background-repeat: no-repeat;
     background-position: top -5px left -5px;
-    background-size: 102.2% auto;    
+    background-size: 102.2% auto;
     padding-top: 1.535rem;
 }
 
-.row-header{    
+.row-header {
     height: rem(776px);
-    background-image:url(../img/images/foto.png);
+    background-image: url(../img/images/foto.png);
     background-repeat: no-repeat;
     background-position: top 5px right -106px;
     background-size: 81% auto;
 }
 
-.header__topLine {  
+.header__topLine {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7.6rem;
-    padding-right: 0.3rem;    
+    padding-right: 0.3rem;
 }
 
-.logo{
-    background-image:url(../img/images/Логотип.png);
-    background-repeat: no-repeat;    
-    height: 53px;
-    width: 63px; 
+.logo {
+    background-image: url(../img/images/Логотип.png);
+    background-repeat: no-repeat;
+    height: rem(53px);
+    width: rem(63px);
 }
 
 /* Кнопка меню-гамбургер
@@ -112,10 +112,11 @@ ul {
 
     &__line {
         &:first-child {
-            width: 15px;
+            width: rem(15px);
         }
     }
 }
+
 /*----------------------------------------------*/
 
 .phone {
@@ -147,7 +148,7 @@ ul {
     font-family: $ff12;
     font-size: 1.125rem;
     font-weight: 200;
-    line-height: 1.7;    
+    line-height: 1.7;
 }
 
 /* Кнопка со стрелкой основная 
@@ -157,8 +158,6 @@ ul {
     display: inline-block;
     text-align: center;
     line-height: 3.375;
-    // width: 15.5rem;
-    // height: 3.375rem;
     padding: 0 46px;
     border-radius: 1.688rem;
     border: 0.125rem solid $fc1;
@@ -173,9 +172,9 @@ ul {
     }
 
     &__arrow {
-        position: relative;        
-        width: 72px;
-        height: 3.375rem;        
+        position: relative;
+        width: rem(72px);
+        height: 3.375rem;
     }
 }
 
@@ -188,20 +187,20 @@ ul {
     right: 0;
     margin-top: -1px;
     content: '';
-    width: 72px;
+    width: rem(72px);
     height: 0.125rem;
     background-color: $fc1;
 }
 
 .btn__arrowBase::after {
-    width: 7px;
+    width: rem(7px);
     transform: translateY(6px);
     transform: rotate(40deg);
     transform-origin: right top;
 }
 
 .btn__arrowBase::before {
-    width: 7px;
+    width: rem(7px);
     transform: translateY(-6px);
     transform: rotate(-40deg);
     transform-origin: right bottom;
@@ -209,7 +208,7 @@ ul {
 
 .wrapper__arrow {
     position: absolute;
-    right: -36px;
+    right: rem(-36px);
     top: 0%;
 }
 
@@ -219,19 +218,183 @@ ul {
 /*=============================================
         ОСНОВНОЙ КОНТЕНТ
 ============================================= */
+.main {
+    margin-top: 4.975rem;
+}
 
 /*---------------------------------------------
-  Секция ...................
+  Секция о пилатесе
 --------------------------------------------- */
+.row-base {
+    min-height: rem(400px);
+    background-repeat: no-repeat;
+    background-position: top 87% right 57.5%;
+}
 
+.title-section {
+    padding-left: 2.6rem;
+    opacity: 0.87;
+    color: $fc2;
+    font-family: $ff3;
+    font-size: 3rem;
+    font-weight: 400;
+    @include title(100%, 3px, $fc2);
 
+    &::before {
+        left: -0.325rem;
+    }
+
+    &::after {
+        display: none;
+    }
+}
+
+.desc-section {
+    opacity: 0.87;
+    color: $fc2;
+    font-family: $ff12;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.next {
+    color: $fc7;
+    font-family: $ff12;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.09rem;
+    text-transform: uppercase;
+
+    .fa-chevron-right {
+        margin-left: 0.35rem;
+        ;
+    }
+}
+
+.row-base__content {
+    position: relative;
+
+    .title-section:nth-child(1) {
+        margin-top: 0;
+        margin-bottom: 2.9625rem;
+    }
+
+    .desc-section:nth-child(3) {
+        margin-top: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .row-base__img2 {
+        position: absolute;
+        top: rem(35px);
+        right: rem(4px);
+    }
+
+    .row-base__img1 {
+        position: absolute;
+        bottom: rem(-327px);
+        left: rem(307px);
+        z-index: 10;
+    }
+}
 
 /*----------------------------------------------*/
 
 /*---------------------------------------------
-  Секция ..................
+  Секция расписание и стоимость
 --------------------------------------------- */
+.row-price {
+    margin-top: 27.7rem;
+    &__content{
+        .title-section:nth-child(1) {
+            margin-top: 0;
+            margin-bottom: 3.4625rem;
+        }
+    }
+}
 
+.row-price__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-item {
+    width: 32.4%;
+    padding-bottom: 5.9375rem;
+    border-radius: 0.25rem;
+    background-repeat: no-repeat;
+    background-position: top 21% right 42.7%;
+    background-color: $fc3;
+    opacity: 0.5;
+
+    &__container{
+        width: 71.8%;
+        margin-left: rem(69px);
+    }
+
+    &__title {
+        margin-top: 10.9625rem;
+        margin-bottom: 1.275rem;
+        color: $fc1;
+        font-family: $ff3;
+        font-size: 1.75rem;
+        font-weight: 500;
+        line-height: 1;
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+
+        span {
+            padding-left: 0.15rem;
+            font-size: 0.875rem;
+            letter-spacing: 0.088rem;
+        }
+    }
+
+    &__tarif {
+        padding-left: 0.3rem;
+        color: $fc1;
+        font-family: $ff12;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__list {
+        margin-top: 0.9375rem;
+        margin-bottom: 2.05rem;
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+    &__punkt {
+        color: $fc1;
+        font-family: $ff12;
+        font-size: 1.188rem;
+        font-weight: 500;
+        line-height: 1.91;
+        text-transform: lowercase;
+    }
+
+    &__mode{
+        margin-left: rem(17px);
+    }
+
+    .btn--price{
+        padding: 0 3.925rem;
+        line-height: 2.775;
+    }
+
+    .btn__text--price{
+        font-size: 1.188rem;
+    }
+}
+
+.price-item--darken{
+    opacity: 0.7;
+}
+.price-item--dark{
+    opacity: 0.9;
+}
 
 /*----------------------------------------------*/
 /*============================================= */
