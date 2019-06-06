@@ -2848,7 +2848,7 @@ ul {
   height: 48.5rem;
   background-image: url(../img/images/foto.png);
   background-repeat: no-repeat;
-  background-position: top 5px right -106px;
+  background-position: top 5px right -6.625rem;
   background-size: 81% auto; }
 
 .header__topLine {
@@ -3143,6 +3143,101 @@ ul {
   opacity: 0.9; }
 
 /*----------------------------------------------*/
+/*---------------------------------------------
+  Секция про занятия
+--------------------------------------------- */
+.row-classes {
+  margin-top: 7.2rem; }
+
+.row-classes__container {
+  max-width: 61.25rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .row-classes__container .row-classes__part:nth-child(1) {
+    margin-top: 8.7rem; }
+  .row-classes__container .title-row-classes:nth-child(1) {
+    margin-bottom: 1.2rem; }
+
+.row-classes__content1 {
+  height: 34.25rem;
+  background-repeat: no-repeat;
+  background-position: top 100% right 30.5%; }
+  .row-classes__content1 .row-classes__img1 {
+    position: relative;
+    z-index: -10;
+    height: 23.25rem;
+    width: 50%;
+    margin-top: 2.2rem;
+    background-repeat: no-repeat;
+    background-position: 36.1% 100%; }
+  .row-classes__content1 .title-section:nth-child(1) {
+    padding-top: 0.3rem; }
+
+.title-row-classes {
+  opacity: 0.87;
+  color: #242424;
+  font-family: "RobotoRegular";
+  font-size: 1.75rem;
+  font-weight: 400; }
+
+.row-classes-desc {
+  opacity: 0.87;
+  color: #010101;
+  font-family: "SFUITextRegular";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5; }
+
+.row-classes__content2 {
+  height: 43.75rem;
+  background-repeat: no-repeat;
+  background-position: 22.3% 53%; }
+  .row-classes__content2 .row-classes__container {
+    position: relative; }
+    .row-classes__content2 .row-classes__container .row-classes__pic2 {
+      position: absolute;
+      top: -1.5rem;
+      left: 6.9375rem; }
+  .row-classes__content2 .title-row-classes:nth-child(1) {
+    margin-top: 18rem;
+    margin-bottom: 0.9rem; }
+
+.row-classes__content3 {
+  height: 31.25rem;
+  background-repeat: no-repeat;
+  background-position: 71.5% 44.8%; }
+  .row-classes__content3 .row-classes__container {
+    position: relative; }
+    .row-classes__content3 .row-classes__container .row-classes__pic3 {
+      position: absolute;
+      top: 9rem;
+      left: 25.8375rem; }
+
+.row-classes__content4 {
+  height: 37.5rem;
+  background-repeat: no-repeat;
+  background-position: 20.4% 78%; }
+  .row-classes__content4 .row-classes__container {
+    position: relative; }
+    .row-classes__content4 .row-classes__container .row-classes__pic4 {
+      position: absolute;
+      top: 10.375rem;
+      left: -3rem; }
+  .row-classes__content4 .title-row-classes:nth-child(1) {
+    margin-top: 16.8rem;
+    margin-bottom: 0.9rem; }
+  .row-classes__content4 .row-classes__part:nth-child(2) {
+    padding-left: 39.7rem; }
+
+/*----------------------------------------------*/
+/*---------------------------------------------
+  Секция с отзывами
+--------------------------------------------- */
 /*============================================= */
 /*=============================================
         ПОДВАЛ

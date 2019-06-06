@@ -86,7 +86,7 @@ ul {
     height: rem(776px);
     background-image: url(../img/images/foto.png);
     background-repeat: no-repeat;
-    background-position: top 5px right -106px;
+    background-position: top 5px right rem(-106px);
     background-size: 81% auto;
 }
 
@@ -306,7 +306,8 @@ ul {
 --------------------------------------------- */
 .row-price {
     margin-top: 27.7rem;
-    &__content{
+
+    &__content {
         .title-section:nth-child(1) {
             margin-top: 0;
             margin-bottom: 3.4625rem;
@@ -328,7 +329,7 @@ ul {
     background-color: $fc3;
     opacity: 0.5;
 
-    &__container{
+    &__container {
         width: 71.8%;
         margin-left: rem(69px);
     }
@@ -375,28 +376,158 @@ ul {
         text-transform: lowercase;
     }
 
-    &__mode{
+    &__mode {
         margin-left: rem(17px);
     }
 
-    .btn--price{
+    .btn--price {
         padding: 0 3.925rem;
         line-height: 2.775;
     }
 
-    .btn__text--price{
+    .btn__text--price {
         font-size: 1.188rem;
     }
 }
 
-.price-item--darken{
+.price-item--darken {
     opacity: 0.7;
 }
-.price-item--dark{
+
+.price-item--dark {
     opacity: 0.9;
 }
 
 /*----------------------------------------------*/
+
+/*---------------------------------------------
+  Секция про занятия
+--------------------------------------------- */
+.row-classes {
+    margin-top: 7.2rem;
+}
+
+.row-classes__container {
+    max-width: rem(980px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .row-classes__part:nth-child(1) {
+        margin-top: 8.7rem;
+    }
+
+    .title-row-classes:nth-child(1) {
+        margin-bottom: 1.2rem;
+    }
+}
+
+.row-classes__content1 {
+    height: 34.25rem;
+    background-repeat: no-repeat;
+    background-position: top 100% right 30.5%;
+
+    .row-classes__img1 {
+        position: relative;
+        z-index: -10;
+        height: 23.25rem;
+        width: 50%;
+        margin-top: 2.2rem;
+        background-repeat: no-repeat;
+        background-position: 36.1% 100%;
+    }
+
+    .title-section:nth-child(1) {
+        padding-top: 0.3rem;
+    }
+}
+
+.title-row-classes {
+    opacity: 0.87;
+    color: $fc5;
+    font-family: $ff3;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.row-classes-desc {
+    opacity: 0.87;
+    color: $fc10;
+    font-family: $ff12;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.row-classes__content2 {
+    height: rem(700px);
+    background-repeat: no-repeat;
+    background-position: 22.3% 53%;
+
+    .row-classes__container {
+        position: relative;
+
+        .row-classes__pic2 {
+            position: absolute;
+            top: rem(-24px);
+            left: rem(111px);
+        }
+    }
+
+    .title-row-classes:nth-child(1) {
+        margin-top: 18rem;
+        margin-bottom: 0.9rem;
+    }
+}
+
+.row-classes__content3{
+    height: rem(500px);
+    background-repeat: no-repeat;
+    background-position: 71.5% 44.8%;
+
+    .row-classes__container {
+        position: relative;
+
+        .row-classes__pic3 {
+            position: absolute;
+            top: 9rem;
+            left: 25.8375rem;
+        }
+    }
+}
+
+.row-classes__content4 {
+    height: rem(600px);
+    background-repeat: no-repeat;
+    background-position: 20.4% 78%;
+
+    .row-classes__container {
+        position: relative;
+
+        .row-classes__pic4 {
+            position: absolute;
+            top: rem(166px);
+            left: rem(-48px);
+        }
+    }
+
+    .title-row-classes:nth-child(1) {
+        margin-top: 16.8rem;
+        margin-bottom: 0.9rem;
+    }
+    .row-classes__part:nth-child(2) {
+        padding-left: 39.7rem;
+    }
+}
+/*----------------------------------------------*/
+
+/*---------------------------------------------
+  Секция с отзывами
+--------------------------------------------- */
+
+
+
+
 /*============================================= */
 
 
