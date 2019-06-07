@@ -28,6 +28,8 @@ gulp.task('styles', () => {
 	return gulp.src([
 		// './src/libs/**/*.scss',
 		'./src/libs/fontawesome/font-awesome.css',
+		'./src/libs/owlcarousel/owl.carousel.css',
+		// './src/libs/owlcarousel/owl.theme.default.css',
 		'./src/scss/style.scss'
 	])
 		.pipe(sourcemaps.init())				
@@ -48,8 +50,9 @@ gulp.task('styles', () => {
 
 //Таск для обработки скриптов
 gulp.task('scripts', () => {
-	return gulp.src([
-		'./src/libs/**/*.js',
+	return gulp.src([		
+		'./src/libs/jquery/jquery.min.js',
+		'./src/libs/owlcarousel/owl.carousel.min.js',
 		'./src/js/**/*.js'
 	])
 		.pipe(concat('script.js'))

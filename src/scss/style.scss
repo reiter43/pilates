@@ -158,7 +158,7 @@ ul {
     display: inline-block;
     text-align: center;
     line-height: 3.375;
-    padding: 0 46px;
+    padding: 0 rem(46px);
     border-radius: 1.688rem;
     border: 0.125rem solid $fc1;
     text-decoration: none;
@@ -480,7 +480,7 @@ ul {
     }
 }
 
-.row-classes__content3{
+.row-classes__content3 {
     height: rem(500px);
     background-repeat: no-repeat;
     background-position: 71.5% 44.8%;
@@ -515,15 +515,110 @@ ul {
         margin-top: 16.8rem;
         margin-bottom: 0.9rem;
     }
+
     .row-classes__part:nth-child(2) {
         padding-left: 39.7rem;
     }
 }
+
 /*----------------------------------------------*/
 
 /*---------------------------------------------
   Секция с отзывами
 --------------------------------------------- */
+.row-comments {
+    margin-top: 5.3rem;
+}
+
+.slider__item {
+    display: flex;
+    max-width: rem(977px);
+    margin: 1.45rem auto;
+    padding: 6.7375rem rem(140px);
+    background-repeat: no-repeat;
+    background-position: 92% 18.8%;
+    box-shadow: 0 9px 23px 9px rgba(33, 33, 33, 0.04);
+    border-radius: 4px;
+    background-color: $fc1;
+
+    .comments__img {
+        max-width: rem(185px);
+        margin-right: 3.3625rem;
+    }
+
+    .comments__content {
+        color: $fc2;
+        font-family: $ff3;
+        font-weight: 400;
+
+        .comments__name {
+            margin-top: -1.25rem;
+            margin-bottom: rem(3px);
+            opacity: 0.87;
+            font-size: rem(28px);
+        }
+
+        .comments__info {
+            margin-bottom: 1.2525rem;
+            opacity: 0.87;
+            font-size: rem(18px);
+
+            .comments__social {
+                margin-left: 0.15rem;
+                background-color: $fc1;
+
+                .fa {
+                    margin-left: rem(15px);
+                }
+            }
+        }
+
+        .comments__text {
+            color: $fc2;
+            font-family: $ff12;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: rem(23.96px);
+        }
+    }
+}
+
+// Пагинация и навигация слайдера
+.slider {
+    .owl-dots {
+        width: 100%;
+        text-align: center;
+        margin-top: 1.4rem;
+        margin-left: -0.8rem;
+
+        .owl-dot {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: $fc3;
+            opacity: 0.5;
+            margin-left: 1.675rem;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+
+            &.active {
+                background-color: $fc3;
+                transform: scale(1.5)
+            }
+        }
+    }
+
+    .owl-nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 13.7rem;
+        display: flex;
+        justify-content: space-between;
+        outline: none;
+    }
+}
+//________________________________________________
 
 
 
