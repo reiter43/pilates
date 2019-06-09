@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Document</title>
 
+    
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=549ec0f9-2d60-4f5b-a62d-42e505e1b805&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 
 <body class="page">
@@ -317,7 +323,43 @@
                 </div>
             </div>
         </section>
+
+        <section class="row-contacts">
+            <div class="container">
+                <h1 class="title-section">Контакты</h1>
+            </div>
+            
+            <div class="card-adress">
+                <p class="card-adress__adress">
+                    Адрес
+                    <span>г. Кропоткин <br> ул. Дугинец 10а </span>
+                </p>
+                <p class="card-adress__phone">
+                    Телефон
+                    <a href="+7 918 365 06 07">+7 918 365 06 07</a>
+                </p>
+                <p class="card-adress__email">
+                    E-mail
+                    <a href="mailto">pilatesplus@gmail.com </a>
+                </p>
+            </div>
+            <div id="map" class="map"></div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row-footer">
+                <p class="row-footer__copy">Pilates Plus, 2017 &copy</p>
+                <a href="#" class="logo"></a>
+                <span class="row-footer__social">
+                    <a href="#"><i class="fa fa-vk"></i></a>
+                    <a href="#"> <i class="fa fa-facebook"></i></a>
+                    <a href="#"> <i class="fa fa-instagram"></i></a>                    
+                </span>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="js/script.js"></script>

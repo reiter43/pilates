@@ -3538,13 +3538,98 @@ ul {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  outline: none; }
+  justify-content: space-between; }
+  .slider .owl-nav .owl-next,
+  .slider .owl-nav .owl-prev {
+    outline: none; }
+
+/*---------------------------------------------
+  Секция Контакты
+--------------------------------------------- */
+.row-contacts {
+  position: relative;
+  margin-top: 7.2rem; }
+
+.card-adress {
+  position: absolute;
+  top: 7.5875rem;
+  left: 5.625rem;
+  z-index: 10;
+  max-width: 19.375rem;
+  width: 100%;
+  padding: 3.25rem 0 4.5125rem 4.25rem;
+  -webkit-box-shadow: 0 6px 15px rgba(33, 33, 33, 0.2);
+  box-shadow: 0 6px 15px rgba(33, 33, 33, 0.2);
+  background-color: #91aa59; }
+  .card-adress .card-adress__adress,
+  .card-adress .card-adress__phone,
+  .card-adress .card-adress__email {
+    opacity: 0.87;
+    color: #ffffff;
+    font-family: "SFUITextRegular";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2.10; }
+  .card-adress .card-adress__phone:nth-child(2) {
+    margin-top: 1.18rem;
+    margin-bottom: 0.7rem; }
+  .card-adress span,
+  .card-adress a {
+    display: block; }
+  .card-adress span {
+    opacity: 0.87;
+    color: #ffffff;
+    font-family: "SFUITextRegular";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.34; }
+  .card-adress a {
+    opacity: 0.87;
+    color: #ffffff;
+    font-family: "SFUITextRegular";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.93; }
+  .card-adress .card-adress__email a {
+    text-decoration: underline; }
+
+.map {
+  margin-top: 3.5rem;
+  width: 100%;
+  height: 32.063rem; }
 
 /*============================================= */
 /*=============================================
         ПОДВАЛ
 ============================================= */
+footer {
+  padding: 2.375rem 0;
+  background-color: #91aa59; }
+
+.row-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .row-footer__copy {
+    margin-right: -3.5rem;
+    color: #fefefe;
+    font-family: "SFUITextRegular";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.57;
+    letter-spacing: 0.095rem; }
+  .row-footer .fa {
+    margin-left: 1rem;
+    color: #ffffff;
+    opacity: 0.87;
+    font-size: 1.275rem; }
+
 /*============================================= */
 /*=============================================
         АДАПТИВ

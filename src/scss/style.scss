@@ -615,11 +615,85 @@ ul {
         bottom: 13.7rem;
         display: flex;
         justify-content: space-between;
-        outline: none;
+
+        .owl-next,
+        .owl-prev {
+            outline: none;
+        }
     }
 }
+
 //________________________________________________
 
+/*---------------------------------------------
+  Секция Контакты
+--------------------------------------------- */
+.row-contacts {
+    position: relative;
+    margin-top: 7.2rem;
+}
+
+.card-adress {
+    position: absolute;
+    top: 7.5875rem;
+    left: rem(90px);
+    z-index: 10;
+    max-width: rem(310px);
+    width: 100%;
+    padding: 3.25rem 0 4.5125rem rem(68px);
+    box-shadow: 0 6px 15px rgba(33, 33, 33, 0.2);
+    background-color: $fc3;
+
+    .card-adress__adress,
+    .card-adress__phone,
+    .card-adress__email {
+        opacity: 0.87;
+        color:$fc1;
+        font-family: $ff12;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 2.10;
+    }
+
+    .card-adress__phone:nth-child(2){
+        margin-top: 1.18rem;
+        margin-bottom: 0.7rem;
+    }
+
+    span,
+    a {
+        display: block;
+    }
+
+    span {
+        opacity: 0.87;
+        color:$fc1;
+        font-family: $ff12;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.34;
+    }
+
+    a {
+        opacity: 0.87;
+        color: $fc1;
+        font-family: $ff12;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.93;
+
+    }
+
+    .card-adress__email a {
+        text-decoration: underline;
+    }
+}
+
+.map {
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 32.063rem;
+}
 
 
 
@@ -629,7 +703,33 @@ ul {
 /*=============================================
         ПОДВАЛ
 ============================================= */
+footer {
+    padding: rem(38px) 0;
+    background-color: $fc3;
+}
 
+.row-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__copy {
+        margin-right: -3.5rem;
+        color: $fc6;
+        font-family: $ff12;
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.57;
+        letter-spacing: 0.095rem;
+    }
+
+    .fa {
+        margin-left: 1rem;
+        color: $fc1;
+        opacity: 0.87;
+        font-size: 1.275rem;
+    }
+}
 
 
 /*============================================= */
