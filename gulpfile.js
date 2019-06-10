@@ -27,7 +27,8 @@ const imagemin = require('gulp-imagemin');
 gulp.task('styles', () => {
 	return gulp.src([
 		// './src/libs/**/*.scss',
-		'./src/libs/fontawesome/font-awesome.css',
+		// './src/libs/fontawesome/font-awesome.css',
+		'./src/libs/fontello/fontello.css',
 		'./src/libs/owlcarousel/owl.carousel.css',
 		// './src/libs/owlcarousel/owl.theme.default.css',
 		'./src/scss/style.scss'

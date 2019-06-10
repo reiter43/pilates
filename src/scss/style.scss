@@ -74,8 +74,7 @@ ul {
 ============================================= */
 
 .header {
-    height: rem(786px);
-    background-image: url(../img/images/dgHeader.png);
+    height: rem(786px);   
     background-repeat: no-repeat;
     background-position: top -5px left -5px;
     background-size: 102.2% auto;
@@ -83,8 +82,7 @@ ul {
 }
 
 .row-header {
-    height: rem(776px);
-    background-image: url(../img/images/foto.png);
+    height: rem(776px);    
     background-repeat: no-repeat;
     background-position: top 5px right rem(-106px);
     background-size: 81% auto;
@@ -99,7 +97,7 @@ ul {
 }
 
 .logo {
-    background-image: url(../img/images/Логотип.png);
+    background-image: url(../img/images/logo.png);
     background-repeat: no-repeat;
     height: rem(53px);
     width: rem(63px);
@@ -565,10 +563,10 @@ ul {
 
             .comments__social {
                 margin-left: 0.15rem;
-                background-color: $fc1;
-
-                .fa {
+                
+                .ic {
                     margin-left: rem(15px);
+                    color: #808080;
                 }
             }
         }
@@ -648,14 +646,14 @@ ul {
     .card-adress__phone,
     .card-adress__email {
         opacity: 0.87;
-        color:$fc1;
+        color: $fc1;
         font-family: $ff12;
         font-size: 1rem;
         font-weight: 600;
         line-height: 2.10;
     }
 
-    .card-adress__phone:nth-child(2){
+    .card-adress__phone:nth-child(2) {
         margin-top: 1.18rem;
         margin-bottom: 0.7rem;
     }
@@ -667,7 +665,7 @@ ul {
 
     span {
         opacity: 0.87;
-        color:$fc1;
+        color: $fc1;
         font-family: $ff12;
         font-size: 1rem;
         font-weight: 300;
