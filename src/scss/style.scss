@@ -74,7 +74,8 @@ ul {
 ============================================= */
 
 .header {
-    height: rem(786px);   
+    height: rem(786px);
+    background-image: url(../img/images/bgHeader.png);
     background-repeat: no-repeat;
     background-position: top -5px left -5px;
     background-size: 102.2% auto;
@@ -82,13 +83,16 @@ ul {
 }
 
 .row-header {
-    height: rem(776px);    
+    width: 100%;
+    height: rem(776px);
+    background-image: url(../img/images/foto.png);
     background-repeat: no-repeat;
     background-position: top 5px right rem(-106px);
     background-size: 81% auto;
 }
 
 .header__topLine {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,11 +113,36 @@ ul {
     @include gamburger (23px, 2px, 5px, $fc1, $fc3);
 
     &__line {
+        transition: 0.3s;
+
         &:first-child {
             width: rem(15px);
         }
     }
 }
+
+.burger--active {
+    .burger__line {
+        &:first-child {
+            height: 0;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(45deg);
+            margin-bottom: -0.12rem;
+        }
+
+        &:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.burger,
+.burger:active {
+    outline: none;
+}
+
 
 /*----------------------------------------------*/
 
@@ -127,6 +156,35 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+// Скрытое меню
+/*----------------------------------------------*/
+.nav {
+    position: absolute;
+    top: 100%;
+    left: 31.7%;
+    display: none;
+    max-width: 100%;
+    text-align: right;
+
+    &__link {
+        display: block;
+        padding: rem(3px) rem(6px);
+        color: $fc1;
+        font-family: $ff3;
+        font-weight: 300;
+    }
+
+    .nav__link:hover {
+        background-color: darken($fc3, 5%);
+    }
+}
+
+.visible {
+    display: block;
+}
+
+/*----------------------------------------------*/
 
 .header__title {
     margin: 0;
@@ -225,6 +283,7 @@ ul {
 --------------------------------------------- */
 .row-base {
     min-height: rem(400px);
+    background-image: url(../img/images/PointsBg.png);
     background-repeat: no-repeat;
     background-position: top 87% right 57.5%;
 }
@@ -563,7 +622,7 @@ ul {
 
             .comments__social {
                 margin-left: 0.15rem;
-                
+
                 .ic {
                     margin-left: rem(15px);
                     color: #808080;
@@ -721,7 +780,7 @@ footer {
         letter-spacing: 0.095rem;
     }
 
-    .fa {
+    .ic {
         margin-left: 1rem;
         color: $fc1;
         opacity: 0.87;

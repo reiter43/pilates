@@ -790,18 +790,22 @@ ul {
 ============================================= */
 .header {
   height: 49.125rem;
+  background-image: url(../img/images/bgHeader.png);
   background-repeat: no-repeat;
   background-position: top -5px left -5px;
   background-size: 102.2% auto;
   padding-top: 1.535rem; }
 
 .row-header {
+  width: 100%;
   height: 48.5rem;
+  background-image: url(../img/images/foto.png);
   background-repeat: no-repeat;
   background-position: top 5px right -6.625rem;
   background-size: 81% auto; }
 
 .header__topLine {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,8 +848,27 @@ ul {
     background: #ffffff; }
     .burger__line:last-child {
       margin-bottom: 0; }
-  .burger__line:first-child {
-    width: 0.9375rem; }
+  .burger__line {
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .burger__line:first-child {
+      width: 0.9375rem; }
+
+.burger--active .burger__line:first-child {
+  height: 0; }
+
+.burger--active .burger__line:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-bottom: -0.12rem; }
+
+.burger--active .burger__line:last-child {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.burger,
+.burger:active {
+  outline: none; }
 
 /*----------------------------------------------*/
 .phone {
@@ -858,6 +881,27 @@ ul {
   text-transform: uppercase;
   text-decoration: none; }
 
+/*----------------------------------------------*/
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 31.7%;
+  display: none;
+  max-width: 100%;
+  text-align: right; }
+  .nav__link {
+    display: block;
+    padding: 0.1875rem 0.375rem;
+    color: #ffffff;
+    font-family: "RobotoRegular";
+    font-weight: 300; }
+  .nav .nav__link:hover {
+    background-color: #839a4f; }
+
+.visible {
+  display: block; }
+
+/*----------------------------------------------*/
 .header__title {
   margin: 0;
   color: #ffffff;
@@ -947,6 +991,7 @@ ul {
 --------------------------------------------- */
 .row-base {
   min-height: 25rem;
+  background-image: url(../img/images/PointsBg.png);
   background-repeat: no-repeat;
   background-position: top 87% right 57.5%; }
 
@@ -1350,7 +1395,7 @@ footer {
     font-weight: 300;
     line-height: 1.57;
     letter-spacing: 0.095rem; }
-  .row-footer .fa {
+  .row-footer .ic {
     margin-left: 1rem;
     color: #ffffff;
     opacity: 0.87;
@@ -1366,7 +1411,9 @@ footer {
   .header__desc {
     font-size: calc(14px + (18 - 14) * ((100vw - 765px) / (1366 - 765))); }
   .btn__text {
-    font-size: calc(12px + (14 - 12) * ((100vw - 765px) / (1366 - 765))); } }
+    font-size: calc(12px + (14 - 12) * ((100vw - 765px) / (1366 - 765))); }
+  .nav {
+    font-size: calc(13.5px + (16 - 13.5) * ((100vw - 765px) / (1366 - 765))); } }
 
 @media (min-width: 765px) and (max-width: 900px) {
   .header__desc {
@@ -1397,7 +1444,13 @@ footer {
   .header__topLine {
     margin-bottom: 5.6rem; }
   .btn__arrow {
-    display: none; } }
+    display: none; }
+  .nav {
+    z-index: 100;
+    text-align: center; }
+  .nav__link {
+    font-size: 13px;
+    font-weight: lighter; } }
 
 @media (min-width: 321px) and (max-width: 764px) {
   .header__title {
@@ -1417,6 +1470,8 @@ footer {
 @media screen and (max-width: 587px) {
   .container {
     padding: 0 0.9375rem; }
+  .row-header {
+    background-position: top 39px right -4.6875rem; }
   .header__topLine {
     margin-bottom: 1.5rem; }
   .phone {
@@ -1424,11 +1479,22 @@ footer {
   .burger {
     margin-left: 3rem; }
   .header__title {
-    margin-bottom: 1.3rem; }
+    margin-bottom: 1.9rem; }
   .header__desc {
     display: none;
     margin-top: 0.2rem;
-    margin-bottom: 0.4rem; } }
+    margin-bottom: 0.4rem; }
+  .nav {
+    z-index: 100;
+    width: 50%;
+    top: 110%;
+    left: 0;
+    text-align: center; }
+    .nav__link {
+      background-color: #91aa59;
+      font-size: 1rem;
+      border-bottom: 1px solid #c8d4ac;
+      border-right: 1px solid #c8d4ac; } }
 
 @media screen and (max-width: 320px) {
   .header {
@@ -1486,7 +1552,17 @@ footer {
     font-weight: 500; }
   .btn {
     padding: 0 1rem;
-    line-height: 2rem; } }
+    line-height: 2rem; }
+  .nav {
+    z-index: 100;
+    width: 100%;
+    top: 120%;
+    left: 0;
+    text-align: center; }
+    .nav__link {
+      padding: 0.3125rem 0;
+      font-size: 1.25rem;
+      border-left: 1px solid #c8d4ac; } }
 
 /*============================================= */
 

@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Pilates</title>
 
-    
+
 
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=549ec0f9-2d60-4f5b-a62d-42e505e1b805&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=549ec0f9-2d60-4f5b-a62d-42e505e1b805&lang=ru_RU"
+        type="text/javascript">
     </script>
 </head>
 
 <body class="page">
 
-    <header class="header" style="background-image:url(../img/images/bgHeader.png)">
+    <header class="header">
 
-        <div class="row-header" style="background-image:url(../img/images/foto.png)">
+        <div class="row-header">
             <div class="container">
 
                 <div class="header__topLine">
@@ -34,6 +35,12 @@
                     <a href="tel:+7 918 365 07 07" class="phone">
                         +7 918 365 07 07
                     </a>
+                    <nav class="nav">
+                        <a href="#1" class="nav__link">О пилатесе</a>
+                        <a href="#2"class="nav__link">Расписание и стоимость</a>
+                        <a href="#3" class="nav__link">О системе занятий</a>
+                        <a href="#4" class="nav__link">Контакты</a>
+                    </nav>
                 </div>
 
                 <div class="header__content">
@@ -59,10 +66,10 @@
 
     <main class="main">
 
-        <section class="row-base" style="background-image:url(img/images/PointsBg.png)  ">
+        <section class="row-base">
             <div class="container">
                 <div class="row-base__content">
-                    <h2 class="title-section"> <span>О пилатесе</span></h2>
+                    <h2 class="title-section"> <span><a name="1"></a> О пилатесе</span></h2>
                     <p class="desc-section">Пилатес соединяет элементы растяжки <br> с элементами силовой тренировки
                     </p>
                     <p class="desc-section">Комплекс упражнений укрепляет мышцы пресса <br>
@@ -81,6 +88,7 @@
             <div class="container">
                 <div class="row-price__content">
                     <h2 class="title-section">
+                        <a name="2"></a>
                         Расписание и стоимость
                     </h2>
                     <div class="row-price__items">
@@ -184,6 +192,7 @@
             <div class="row-classes__content1" style="background-image:url(img/images/123.png)">
                 <div class="container">
                     <h1 class="title-section">
+                            <a name="3"></a>
                         Как проходят занятия
                     </h1>
                     <div class="row-classes__container">
@@ -326,9 +335,9 @@
 
         <section class="row-contacts">
             <div class="container">
-                <h1 class="title-section">Контакты</h1>
+                <h1 class="title-section"><a name="4"></a>Контакты</h1>
             </div>
-            
+
             <div class="card-adress">
                 <p class="card-adress__adress">
                     Адрес
@@ -355,7 +364,7 @@
                 <span class="row-footer__social">
                     <a href="#"><i class="ic ic-vkontakte"></i></a>
                     <a href="#"> <i class="ic ic-facebbok"></i></a>
-                    <a href="#"> <i class="ic ic-instagram"></i></a>                    
+                    <a href="#"> <i class="ic ic-instagram"></i></a>
                 </span>
             </div>
         </div>
