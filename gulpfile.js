@@ -63,6 +63,20 @@ gulp.task('scripts', () => {
 		.pipe(gulp.dest('./build/js'))
 		.pipe(browserSync.stream());
 });
+// Бандл скриптов под вордпресс
+gulp.task('scripts-wp', () => {
+	return gulp.src([		
+		// './src/libs/jquery/jquery.min.js',
+		'./src/libs/owlcarousel/owl.carousel.min.js',
+		'./src/js/**/*.js'
+	])
+		.pipe(concat('script-wp.js'))
+		.pipe(uglify({
+			toplevel: true
+		}))
+		.pipe(gulp.dest('./build/js'))
+		.pipe(browserSync.stream());
+});
 
 //Таск для очистки папки build
 gulp.task('del', () => {
@@ -95,9 +109,10 @@ gulp.task('watch', () => {
 	gulp.watch('./src/scss/**/*.scss', gulp.series('styles'))
 	//Следить за JS файлами
 	gulp.watch('./src/js/**/*.js', gulp.series('scripts'))
+	gulp.watch('./src/js/**/*.js', gulp.series('scripts-wp'))
 	//При изменении HTML запустить синхронизацию
 	gulp.watch("./build/*.html").on('change', browserSync.reload);
 });
 
 //Таск по умолчанию, Запускает del, styles, scripts и watch
-gulp.task('default', gulp.series('del', gulp.parallel('styles', 'scripts', 'img-compress'), 'watch'));
+gulp.task('default', gulp.series('del', gulp.parallel('styles', 'scripts', 'scripts-wp','img-compress'), 'watch'));

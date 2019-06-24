@@ -3,11 +3,12 @@ $(document).ready(function () {
         items: 1,
         loop: true,
         dots: true,
-        smartSpeed: 1500,
+        smartSpeed: 1500,        
         nav: true,
+        autoHeight: true,
         navText: [
-            "<img src=\"img/images/Стрелка_левая.png\">",
-            "<img src=\"img/images/Стрелка_правая.png\">",
+            "<span class='slider-prev'></span>",
+            "<span class='slider-next'></span>",            
         ],
 
     });

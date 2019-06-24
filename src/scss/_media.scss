@@ -1,4 +1,5 @@
 @media (min-width: 765px) and (max-width: 1366px) {
+
     // Header
     .header__title {
         font-size: smoot(57, 48, 1366, 765);
@@ -15,11 +16,22 @@
     .nav {
         font-size: smoot(16, 13.5, 1366, 765);
     }
-    
+
     // Main
+    .title-section {
+        font-size: smoot(48, 36, 1366, 765);
+    }
+
+    .desc-section {
+        font-size: smoot(16, 13.5, 1366, 765);
+    }
 }
 
+
+
 @media (min-width: 765px) and (max-width: 900px) {
+
+    //Header
     .header__desc {
         margin-top: 0.5rem;
         margin-bottom: 1rem;
@@ -33,10 +45,18 @@
             display: none;
         }
     }
+
+    // Main
+    .row-base__content .row-base__blockImg .row-base__img1 {
+        left: -2rem;
+    }
 }
 
 
+
+
 @media screen and (max-width: 764px) {
+    // Header
     .container {
         padding: 0 rem(60px);
     }
@@ -81,7 +101,28 @@
         font-size: 13px;
         font-weight: lighter;
     }
+
+    // Main
+    .row-base{
+        background-image: none;        
+    }
+
+    .title-section {
+        font-size: 1.5rem;
+    }
+
+    .desc-section {
+        max-width: 19.750rem;
+        font-size: 1rem;
+    }
+
+    .row-base__content .row-base__blockImg .row-base__img1,
+    .row-base__content .row-base__blockImg .row-base__img2{
+      display: none;
+    }
 }
+
+
 
 @media (min-width: 321px) and (max-width: 764px) {
     .header__title {
@@ -112,7 +153,8 @@
     .container {
         padding: 0 rem(15px);
     }
-    .row-header{
+
+    .row-header {
         background-position: top 39px right rem(-75px);
     }
 
@@ -144,13 +186,14 @@
         top: 110%;
         left: 0;
         text-align: center;
-        &__link{
+
+        &__link {
             background-color: $fc3;
-             font-size: 1rem;
-             border-bottom: 1px solid $fc8;
-             border-right: 1px solid $fc8;
+            font-size: 1rem;
+            border-bottom: 1px solid $fc8;
+            border-right: 1px solid $fc8;
         }
-       
+
     }
 }
 
@@ -214,13 +257,15 @@
         padding: 0 rem(16px);
         line-height: 2rem;
     }
+
     .nav {
         z-index: 100;
         width: 100%;
         top: 120%;
         left: 0;
         text-align: center;
-        &__link{
+
+        &__link {
             padding: rem(5px) 0;
             font-size: rem(20px);
             border-left: 1px solid $fc8;

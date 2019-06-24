@@ -285,7 +285,7 @@ ul {
     min-height: rem(400px);
     background-image: url(../img/images/PointsBg.png);
     background-repeat: no-repeat;
-    background-position: top 87% right 57.5%;
+    background-position: top 44.6% right 57.5%;
 }
 
 .title-section {
@@ -323,14 +323,16 @@ ul {
     letter-spacing: 0.09rem;
     text-transform: uppercase;
 
-    .fa-chevron-right {
+    .ic-angle-circled-right {
         margin-left: 0.35rem;
-        ;
+        color: $fc7;
     }
 }
 
 .row-base__content {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
     .title-section:nth-child(1) {
         margin-top: 0;
@@ -342,18 +344,29 @@ ul {
         margin-bottom: 2rem;
     }
 
-    .row-base__img2 {
-        position: absolute;
-        top: rem(35px);
-        right: rem(4px);
+    .row-base__blockImg {
+        position: relative;
+        max-width: 100%;
+
+        .row-base__img1,
+        .row-base__img2 {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .row-base__img2 {
+            margin-top: 2.2rem;
+        }
+
+        .row-base__img1 {
+            position: absolute;
+            bottom: -0.7rem;
+            left: -14.8rem;
+            z-index: 10;
+        }
     }
 
-    .row-base__img1 {
-        position: absolute;
-        bottom: rem(-327px);
-        left: rem(307px);
-        z-index: 10;
-    }
 }
 
 /*----------------------------------------------*/
@@ -362,7 +375,7 @@ ul {
   Секция расписание и стоимость
 --------------------------------------------- */
 .row-price {
-    margin-top: 27.7rem;
+    margin-top: 11.8rem;
 
     &__content {
         .title-section:nth-child(1) {
@@ -600,10 +613,13 @@ ul {
 
     .comments__img {
         max-width: rem(185px);
+        max-height: rem(185px);
+        height: auto;
         margin-right: 3.3625rem;
     }
 
     .comments__content {
+        max-width: 100%;
         color: $fc2;
         font-family: $ff3;
         font-weight: 400;
@@ -631,11 +647,13 @@ ul {
         }
 
         .comments__text {
+            max-width: 95%;
             color: $fc2;
             font-family: $ff12;
             font-size: 1rem;
             font-weight: 300;
             line-height: rem(23.96px);
+            overflow-x: hidden;
         }
     }
 }
@@ -657,10 +675,11 @@ ul {
             opacity: 0.5;
             margin-left: 1.675rem;
             transition: background-color 0.5s ease, transform 0.5s ease;
-
+            outline: none;
+            
             &.active {
                 background-color: $fc3;
-                transform: scale(1.5)
+                transform: scale(1.5)               
             }
         }
     }
@@ -669,16 +688,33 @@ ul {
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 13.7rem;
+        top: 13.7rem;
         display: flex;
         justify-content: space-between;
 
         .owl-next,
         .owl-prev {
             outline: none;
+
+            .slider-next,
+            .slider-prev {
+                outline: none;
+                display: block;
+                width: 22px;
+                height: 38px;
+            }
+
+            .slider-next {
+                background-image: url(../img/images/arrowR.png);
+            }
+
+            .slider-prev {
+                background-image: url(../img/images/arrowL.png);
+            }
         }
     }
 }
+
 
 //________________________________________________
 
